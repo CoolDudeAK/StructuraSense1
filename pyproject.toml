@@ -1,2 +1,17 @@
+[project]
+name = "structurasense"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.0",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "scikit-image>=0.22",
+    "opencv-python-headless>=4.9",
+    "PyJWT>=2.8",
+    "requests>=2.31",
+]
+
 [tool.vercel]
 entrypoint = "backend.app:app"
