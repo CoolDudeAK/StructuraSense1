@@ -65,3 +65,6 @@ def create_app(start_workers=True, seed_demo=None):
         simulator.start()
         cloud_sync.start_worker()
     return app
+  
+# For Vercel
+app = create_app(start_workers=False, seed_demo=True)
